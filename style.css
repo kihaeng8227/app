@@ -175,3 +175,71 @@ header {
 .slideshow img {
   outline: none;
 }
+
+/* #################### section : ceo-access #################### */
+.ceo-access {
+}
+.ceo-inner,
+.access-inner {
+  width: 1300px;
+  margin: auto;
+}
+.ceo-content {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding: 50px 0;
+}
+.ceo-content > div {
+  float: left;
+  width: 50%;
+}
+.ceo-left {
+  padding-right: 50px;
+}
+.ceo-left img {
+  width: 30px;
+  filter: invert(65%) sepia(13%) saturate(2365%) hue-rotate(92deg) brightness(83%) contrast(87%);
+}
+.ceo-left h3 {
+  font-weight: bold;
+}
+.ceo-right {
+  text-align: center;
+}
+.ceo-right > div {
+  float: left;
+  padding: 20px;
+}
+.ceo-msg {
+  width: 70%;
+}
+.ceo-msg h3 {
+  font-size: 28px;
+  color: #1d9f7d;
+}
+.ceo-msg h3 big {
+  display: block;
+}
+.ceo-photo {
+  width: 30%;
+}
+.ceo-photo img {
+  border-radius: 15px;
+  width: 100%;
+}
+.access-content {
+  padding: 50px 0;
+}
+.access-content > div {
+  float: left;
+  width: 50%;
+}
+.access-left {
+  padding-right: 50px;
+  padding-top: 80px;
+}
+.access-right {
+  text-align: center;
+}
+.btn-download {
+}
