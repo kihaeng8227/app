@@ -76,6 +76,10 @@ header {
   margin: 10px;
   font-size: 16px;
 }
+.gnb a:hover {
+  color: #eb4d4b;
+  transition: 0.2s;
+}
 
 /* #################### Section : welcome #################### */
 .welcome {
@@ -198,7 +202,8 @@ header {
 }
 .ceo-left img {
   width: 30px;
-  filter: invert(65%) sepia(13%) saturate(2365%) hue-rotate(92deg) brightness(83%) contrast(87%);
+  filter: invert(65%) sepia(13%) saturate(2365%) hue-rotate(92deg)
+    brightness(83%) contrast(87%);
 }
 .ceo-left h3 {
   font-weight: bold;
