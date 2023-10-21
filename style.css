@@ -52,6 +52,9 @@ body {
 
 /* #################### Header #################### */
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 .header-inner {
   width: 1300px;
@@ -75,3 +78,100 @@ header {
 }
 
 /* #################### Section : welcome #################### */
+.welcome {
+  height: 90vh;
+  position: relative;
+}
+.slideshow {
+}
+.welcome-heading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+  text-align: center;
+  width: 750px;
+}
+.welcome-heading span {
+  font-size: 24px;
+}
+.welcome-heading h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.welcome-heading h1 em {
+  display: block;
+  font-size: normal;
+  color: #eb4d4b;
+}
+.welcome-heading p {
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+.welcome-btns {
+}
+.btn {
+  display: inline-block;
+  width: 160px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.1s;
+}
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+.btn.start {
+  background-color: #0abde3;
+}
+.btn.guide {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Mouse Wheele */
+.mouse {
+  border: 2px solid #22222297;
+  position: absolute;
+  width: 32px;
+  height: 45px;
+  border-radius: 30px;
+  bottom: 100px;
+  left: 250px;
+}
+.wheele {
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 15px;
+  background-color: #22222297;
+  border-radius: 5px;
+  left: 12px;
+  top: 10px;
+  animation: wheele 1.5s linear infinite;
+}
+@keyframes wheele {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+/* #################### Slick Custom CSS #################### */
+.slideshow .slick-arrow {
+  display: none !important;
+}
+.slideshow img {
+  outline: none;
+}
