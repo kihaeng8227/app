@@ -146,4 +146,20 @@
   .feature-content.flex-order  > div:first-child {
     order: 1;
   }
+
+  /* #################### Section : vision #################### */
+  .vision {
+    padding-top: 0;
+  }
+  .vision-content > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .vision-item-headline {
+    width: 80%;
+  }
+  .vision-item-desc {
+    padding: 20px 0;
+  }
 }
