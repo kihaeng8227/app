@@ -49,6 +49,9 @@ body {
   background-color: #fff;
   color: #222;
 }
+body.active {
+  overflow: hidden;
+}
 section {
   padding: 100px 0;
 }
@@ -235,6 +238,15 @@ header {
 .review-slider .slick-next::before {
   transform: rotateY(180deg);
   display: block;
+}
+.mockup-slider .slick-arrow {
+  display: none !important;
+}
+.mockup-slider .slick-dots {
+  bottom: 10px;
+}
+.mockup-slider .slick-dots li {
+  margin: 0;
 }
 
 /* #################### section : ceo-access #################### */
@@ -588,9 +600,9 @@ h1.slogan {
   font-weight: bold;
 }
 
-
 /* #################### Section : focus #################### */
-.focus {}
+.focus {
+}
 .focus-inner {
   width: 1300px;
   margin: auto;
@@ -607,7 +619,8 @@ h1.slogan {
 }
 .focus-item img {
   width: 75px;
-  filter: invert(80%) sepia(93%) saturate(1024%) hue-rotate(306deg) brightness(103%) contrast(101%);
+  filter: invert(80%) sepia(93%) saturate(1024%) hue-rotate(306deg)
+    brightness(103%) contrast(101%);
 }
 .focus-item h3 {
   font-weight: bold;
@@ -618,4 +631,106 @@ h1.slogan {
 }
 .focus-item p {
   margin-top: 0;
+}
+
+/* #################### Section : guide #################### */
+.guide {
+}
+.guide-inner {
+  width: 1300px;
+  margin: auto;
+}
+.guide-content {
+  overflow: hidden;
+}
+.guide-content > div {
+  float: left;
+}
+.guide-slider {
+  width: 40%;
+  text-align: center;
+}
+.guide-video {
+  width: 60%;
+}
+.slider-mockup {
+  display: inline-block;
+  position: relative;
+}
+.mockup-slider {
+  position: absolute;
+  width: 85%;
+  height: 550px;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.mockup-slider img {
+}
+.guide-video h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+.guide-video h1 span {
+  color: #eb4d4b;
+}
+.video-headline {
+  font-size: 34px;
+}
+.video-headline img {
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.video-frame {
+  width: 530px;
+  height: 370px;
+  position: relative;
+}
+.video-frame img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.video-frame .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 80px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* #################### Video Modal #################### */
+.video-modal {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 20;
+}
+.close-modal {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-content iframe {
+  width: 800px;
+  height: 450px;
 }
