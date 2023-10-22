@@ -11,7 +11,7 @@
   }
   /* common css */
   .headline-share h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
   .headline-share p {
     padding: 0 20px;
@@ -192,5 +192,16 @@
   }
   .review-slider .slick-arrow {
     display: none !important;
+  }
+
+  /* #################### Section : focus #################### */
+  .focus-inner {
+    width: 100%;
+  }
+  .focus-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 20px;
   }
 }
