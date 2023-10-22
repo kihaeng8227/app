@@ -17,6 +17,52 @@
     padding: 0 20px;
   }
 
+  /* #################### Header #################### */
+  .header-inner {
+    width: 100%;
+  }
+  .logo {
+    float: right;
+    margin-right: 20px;
+  }
+  .gnb {
+    float: none;
+    background-color: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    left: -270px;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.076);
+    padding-top: 70px;
+    padding-left: 15px;
+    transition: 0.5s;
+  }
+  .gnb.active {
+    left: 0;
+  }
+  .gnb a {
+    display: block;
+  }
+
+  /* Trigger */
+  .trigger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .trigger::before {
+    content: "\e91c";
+    font-family: xeicon;
+  }
+  .trigger.active::before {
+    content: "\e9af";
+  }
+
   /* #################### Section : welcome #################### */
   .welcome {
     background-color: #f9f9f9;
@@ -38,7 +84,6 @@
   .welcome-heading p {
     padding: 0 30px;
   }
-  
 
   /* Mouse Wheele */
   .mouse {
@@ -273,7 +318,7 @@
     margin-top: 0;
     float: left;
   }
-  
+
   /* #################### Footer #################### */
   footer {
     padding: 40px 15px;
@@ -291,5 +336,18 @@
   }
   .policy {
     margin: 10px 0;
+  }
+
+  /* #################### video modal #################### */
+  .video-content {
+    width: 90%;
+  }
+  .video-content h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .video-content iframe {
+    width: 100%;
+    height: 280px;
   }
 }

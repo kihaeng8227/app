@@ -48,19 +48,28 @@ $(function () {
 
   /* wow scroll animation */
   wow = new WOW({
-    boxClass: 'wow',
+    boxClass: "wow",
     offset: 150,
-    mobile: true
-  })
-  wow.init()
+    mobile: true,
+  });
+  wow.init();
 
   /* Header Scroll Change */
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 650) {
-      $('header, .btn-top').addClass('active')
+      $("header, .btn-top").addClass("active");
     } else {
-      $('header, .btn-top').removeClass('active')
+      $("header, .btn-top").removeClass("active");
     }
-  })
-  
+  });
+
+  /* Header Trigger */
+  $(".trigger").click(function () {
+    $(this).toggleClass("active");
+    $(".gnb").toggleClass("active");
+  });
+  $(".gnb a, section").click(function () {
+    $(".trigger").removeClass("active");
+    $(".gnb").removeClass("active");
+  });
 });
