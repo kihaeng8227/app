@@ -45,4 +45,22 @@ $(function () {
     $(".video-modal").fadeOut();
     $("body").removeClass("active");
   });
+
+  /* wow scroll animation */
+  wow = new WOW({
+    boxClass: 'wow',
+    offset: 150,
+    mobile: true
+  })
+  wow.init()
+
+  /* Header Scroll Change */
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 650) {
+      $('header, .btn-top').addClass('active')
+    } else {
+      $('header, .btn-top').removeClass('active')
+    }
+  })
+  
 });
