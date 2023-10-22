@@ -1,0 +1,12 @@
+/* 1. 모바일 사이즈 보다 큰 너비 값이 있다면 모두 100%로 변경 */
+/* 2. 가로 배치된 레이아웃을 세로 배치로 변경 작업(float:none, width: 100%) */
+
+@media (max-width: 768px) {
+  /* Default CSS */
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 50px 15px;
+  }
+}
