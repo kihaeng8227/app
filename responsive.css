@@ -38,6 +38,7 @@
   .welcome-heading p {
     padding: 0 30px;
   }
+  
 
   /* Mouse Wheele */
   .mouse {
@@ -206,7 +207,7 @@
   }
 
   /* #################### Section : guide #################### */
-  .guide {
+  section.guide {
     padding-top: 50px;
     padding-bottom: 100px;
   }
